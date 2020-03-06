@@ -36,3 +36,6 @@ Route::post('admin/generator', ['uses' => '\Appzcoder\LaravelAdmin\Controllers\P
 
 Route::resource('admin/company', 'Admin\\CompanyController');
 Route::resource('admin/company', 'Admin\\CompanyController');
+Route::resource('admin/menus', 'Admin\\MenusController');
+Route::resource('admin/menus', 'Admin\\MenusController');
+Route::resource('admin/menus', 'Admin\\MenusController');
