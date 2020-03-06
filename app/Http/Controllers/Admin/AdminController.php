@@ -14,7 +14,15 @@ class AdminController extends Controller
      */
     public function index()
     {
-        // Check role anywhere
-        return view('admin.dashboard');
+
+        if (Auth::check() && Auth::user()->hasRole('Admin')) {
+            return view('admin.dashboard');
+        }
+        else if(Auth::check() && Auth::user()->hasRole('Employee')){
+            return view('employee.dashboard');
+        }
+        else{
+            return view('auth.login');
+        }
     }
 }
