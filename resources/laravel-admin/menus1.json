@@ -1,0 +1,17 @@
+{
+    "menus": [
+        {
+            "section": "Resources",
+            "items": [
+                {
+                    "title": "Users",
+                    "url": "\/admin\/users"
+                },
+                {
+                    "title": "Company",
+                    "url": "\/admin\/company"
+                }
+            ]
+        }
+    ]
+}
