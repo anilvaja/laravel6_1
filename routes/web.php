@@ -39,3 +39,5 @@ Route::resource('admin/company', 'Admin\\CompanyController');
 Route::resource('admin/menus', 'Admin\\MenusController');
 Route::resource('admin/menus', 'Admin\\MenusController');
 Route::resource('admin/menus', 'Admin\\MenusController');
+
+Route::get('send', 'HomeController@sendNotification');
